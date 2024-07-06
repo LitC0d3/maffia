@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maffia18 - BarberShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <img src="img/logo.png" alt="Logo" class="logo">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#equipo">Nuestra Maffia</a></li>
+              <li><a href="#local">Local</a></li>
+            </ul>
+          </nav>
+          <div class="boton-header">
+          <button class="btn btn-agendar">Agendar cita</button>
+        </div>
+          <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+        <main>
+            <h1 data-aos="fade-up">BarberShop Maffia18</h1>
+            <h2 data-aos="fade-up">EL ESTILO ES UN REFLEJO DE TU ACTITUD Y PERSONALIDAD</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Horario de atención: 09:00 a 6:00 pm</p>
+            <button class="btn btn-agendar" data-aos="fade-up" data-aos-delay="400">Agendar cita</button>
+        </main>
+
+        <section id="sobre" class="sobre">
+            <div class="sobre-imagens" data-aos="fade-right">
+                <video autoplay muted loop playsinline style="width: 48%; margin: 1%; object-fit: cover; border-radius: 10px;">
+                    <source src="img/cortes/corte.mp4" type="video/mp4">
+                    Tu navegador no soporta videos HTML5.
+                </video>
+                <div class="video-container" style="width: 48%; margin: 1%; position: relative; overflow: hidden; border-radius: 10px;">
+                    <video autoplay muted loop playsinline style="width: 100%; height: auto; object-fit: cover; position: absolute; top: 0; left: 0;">
+                        <source src="img/cortes/corte2.mp4" type="video/mp4">
+                        Tu navegador no soporta videos HTML5.
+                    </video>
+                </div>
+            </div>
+            
+            
+            <div class="sobre-texto" data-aos="fade-left">
+                <div class="sobre-nosotros">
+                <h2>Sobre Nosotros</h2>
+            </div>
+            <p>En nuestra barbería, no solo nos especializamos en cortes de cabello y afeitados, sino que brindamos una experiencia única a cada cliente que cruza nuestras puertas. Cada visita es más que una simple sesión de belleza: es un momento de relajación y cuidado personalizado.</p>
+            <p>Nuestros barberos no solo son expertos en su oficio, sino que también son artistas dedicados a su arte. Desde cortes clásicos hasta estilos modernos y atrevidos, cada servicio se adapta a las preferencias únicas de nuestros clientes. Nos enorgullece no solo seguir las tendencias, sino establecerlas con creatividad y pasión.</p>
+            <p>Además, nos preocupamos por crear un ambiente acogedor y amigable. Aquí, nuestros clientes se sienten como en casa, disfrutando de conversaciones animadas y un trato personalizado que va más allá de las expectativas habituales.</p>
+            <p>Nuestro horario de atención es de 09:00 a 18:00 horas, de lunes a sábado.</p>
+            
+            </div>
+        </section>
+
+        <section id="servicios" class="servicios">
+            <h2 data-aos="fade-up">Servicios</h2>
+            <center><p data-aos="fade-up" data-aos-delay="200">Nuestra barbería se enorgullece de ofrecer servicios de excelente calidad que van más allá del simple corte de cabello y afeitado.</p>
+            </center>
+            <div class="servicios-grid">
+                <div class="servicio-item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="img/cortes/clasico.jpg" alt="Corte de cabello">
+                    <div class="servicio-info">
+                        <h3>Corte Clasico</h3>
+                        <span class="servicio-precio">Precio por Corte: S/.10</span>
+                    </div>
+                </div>
+                <div class="servicio-item" data-aos="fade-up" data-aos-delay="600">
+                    <img src="img/cortes/degradado.jpg" alt="Corte completo">
+                    <div class="servicio-info">
+                        <h3>Corte Degradado</h3>
+                        <span class="servicio-precio">Precio por Corte: S/.30</span>
+                    </div>
+                </div>
+                <div class="servicio-item" data-aos="fade-up" data-aos-delay="800">
+                    <img src="img/cortes/barba.jpeg" alt="Corte y Barba">
+                    <div class="servicio-info">
+                        <h3>Corte y Barba</h3>
+                        <span class="servicio-precio">Precio por Corte: S/.35</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipo" class="nuestro-equipo">
+            <h2 data-aos="fade-up">Nuestra Maffia</h2>
+            <br><br>
+            <div class="equipo-container">
+                <div class="miembro-equipo" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/anze.jpeg" alt="Max Zelaya Ayala">
+                    <h3>Max Zelaya Ayala</h3>
+                    <h4>Redes Sociales</h4>
+                    <div class="redes-sociales">
+                        <a href="#" aria-label="Twitter de Max Zelaya Ayala"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/anze_zaru/" aria-label="Instagram de Max Zelaya Ayala"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100011100340190" aria-label="Facebook de Max Zelaya Ayala"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="miembro-equipo" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/anze.jpeg" alt="imagen2">
+                    <h3>Max Zelaya Ayala</h3>
+                    <h4>Redes Sociales</h4>
+                    <div class="redes-sociales">
+                        <a href="#" aria-label="Twitter de"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Instagram de"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook de"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="miembro-equipo" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/anze.jpeg" alt="imagen3">
+                    <h3>Max Zelaya Ayala</h3>
+                    <h4>Redes Sociales</h4>
+                    <div class="redes-sociales">
+                        <a href="#" aria-label="Twitter de"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Instagram de"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook de"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <!-- Repite para otros miembros del equipo -->
+            </div>
+        </section>
+
+        <section id="local" class="servicios">
+            <h2 data-aos="fade-up">Nuestro Local</h2>
+            <div class="unidades-container">
+                <div class="unidad" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/local.jpeg" alt="Unidad Calle Aguiar">
+                    <div class="unidad-info">
+                        <p>Ubicacion:</p>
+                        <p>Av 10 de Junio Local Stand D</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <center>
+                <div class="social-links" style="margin-right: 20px;">
+                    <a href="https://www.instagram.com/maffia18_/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><br>
+                    <p></p>
+                    <img src="img/logo.png" alt="Logo Barbería" class="footer-logo">
+                    <p> Derechos Reservados Maffia18 - 2024</p>
+                </div>
+            </div></center>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/993677504" class="whatsapp-button" aria-label="Contacto vía WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+<!-- Modal -->
+<div id="modal-agendar" class="modal">
+    <div class="modal-content" data-aos="zoom-in">
+        <span class="close">&times;</span>
+        <h2>Agendar Cita</h2>
+        <form action="#">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+            <label for="servicio">Servicio:</label><br>
+            <select id="servicio" name="servicio">
+                <option value="corte-clasico">Corte Clásico - S/.10</option>
+                <option value="corte-degradado">Corte Degradado - S/.30</option>
+                <option value="corte-barba">Corte y Barba - S/.35</option>
+            </select><br><br>
+            <button type="button" class="btn" id="btn-confirmar">Confirmar Cita</button>
+        </form>
+    </div>
+</div>
+
+<!-- Modal de Confirmación -->
+<div id="modal-confirmacion" class="modal">
+    <div class="modal-content">
+        <!-- Contenido del modal de confirmación -->
+        <center><img src="img/logo.png" alt="Logo Barbería" class="footer-logo">
+        <h2>Confirmación de Cita</h2>
+        <div class="image">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#000000" d="M20 7L9.00004 18L3.99994 13"></path> </g></svg>
+            </div> 
+        <p>¡Su cita ha sido confirmada!</p>
+        <button type="button" class="btn" id="btn-cerrar-confirmacion">Cerrar</button></center>
+    </div>
+</div>
+
+
+<script>
+    //header
+    document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const navList = document.querySelector('.nav-list');
+  const header = document.querySelector('.header');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  hamburger.addEventListener('click', () => {
+    navList.classList.toggle('show');
+    hamburger.classList.toggle('active');
+  });
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      header.classList.add('scroll');
+    } else {
+      header.classList.remove('scroll');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+      
+      window.scrollTo({
+        top: targetSection.offsetTop - header.offsetHeight,
+        behavior: 'smooth'
+      });
+
+      if (navList.classList.contains('show')) {
+        navList.classList.remove('show');
+        hamburger.classList.remove('active');
+      }
+    });
+  });
+
+  // Animación de entrada para elementos del header
+  const headerElements = document.querySelectorAll('.header .container > *');
+  headerElements.forEach((element, index) => {
+    element.style.opacity = '0';
+    setTimeout(() => {
+      element.classList.add('fadeInDown');
+      element.style.opacity = '1';
+    }, 100 * index);
+  });
+});
+// Función para abrir el modal
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    modal.style.display = 'block';
+    modal.offsetHeight; // Forzar un reflow antes de añadir la clase 'show'
+    modal.classList.remove('hide');
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal(modalId) {
+    var modal = document.getElementById(modalId);
+    var modalContent = modal.querySelector('.modal-content');
+    
+    modalContent.classList.add('hide');
+    
+    modalContent.addEventListener('transitionend', function handler(event) {
+        if (event.propertyName === 'opacity' && !modalContent.classList.contains('show')) {
+            modal.style.opacity = 0;
+            modalContent.classList.remove('hide');
+            modalContent.removeEventListener('transitionend', handler);
+        }
+    });
+
+    modal.addEventListener('transitionend', function handler(event) {
+        if (event.propertyName === 'opacity' && !modal.classList.contains('show')) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            modal.removeEventListener('transitionend', handler);
+        }
+    });
+
+    setTimeout(function() {
+        modal.classList.remove('show');
+    }, 300); // Retrasar la eliminación de la clase 'show' para esperar a que el contenido termine su animación
+}
+
+// Configurar los modales al cargar el documento
+document.addEventListener('DOMContentLoaded', function() {
+    var modalAgendar = document.getElementById('modal-agendar');
+    var modalConfirmacion = document.getElementById('modal-confirmacion');
+    
+    // Asignar eventos para abrir el modal de agendar cita
+    document.querySelectorAll('.btn-agendar').forEach(function(button) {
+        button.addEventListener('click', function() {
+            openModal('modal-agendar');
+        });
+    });
+
+    // Asignar eventos para cerrar los modales
+    document.querySelectorAll('.close').forEach(function(closeButton) {
+        closeButton.addEventListener('click', function() {
+            closeModal('modal-agendar');
+            closeModal('modal-confirmacion');
+        });
+    });
+
+    // Cerrar modales al hacer clic fuera de ellos
+    window.addEventListener('click', function(event) {
+        if (event.target === modalAgendar) {
+            closeModal('modal-agendar');
+        }
+        if (event.target === modalConfirmacion) {
+            closeModal('modal-confirmacion');
+        }
+    });
+
+    // Cerrar modales al presionar la tecla Esc
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeModal('modal-agendar');
+            closeModal('modal-confirmacion');
+        }
+    });
+
+    // Función para confirmar la cita
+    document.getElementById('btn-confirmar').addEventListener('click', function() {
+        var nombre = document.getElementById('nombre').value.trim();
+        var telefono = document.getElementById('telefono').value.trim();
+
+        if (nombre === '' || telefono === '') {
+            alert('Por favor complete todos los campos antes de confirmar la cita.');
+            return;
+        }
+
+        // Simulación de envío exitoso de datos y mostrar el modal de confirmación
+        setTimeout(function() {
+            closeModal('modal-agendar'); // Cerrar modal de agendar cita
+            openModal('modal-confirmacion'); // Mostrar modal de confirmación
+        }, 500); // Ajusta el tiempo según sea necesario
+    });
+
+    // Cerrar el modal de confirmación al hacer clic en el botón "OK"
+    document.getElementById('btn-ok').addEventListener('click', function() {
+        closeModal('modal-confirmacion');
+    });
+});
+
+    </script>
+    
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
