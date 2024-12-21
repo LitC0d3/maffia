@@ -16,73 +16,6 @@
             <div class="loading-bar"></div>
         </div>
     </div>
-    <style>
-        #preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.loader {
-    text-align: center;
-}
-
-.logo-loader {
-    width: 150px;
-    height: auto;
-    margin-bottom: 20px;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-.loading-bar {
-    width: 200px;
-    height: 4px;
-    background-color: #333;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-}
-
-.loading-bar::after {
-    content: '';
-    display: block;
-    width: 40%;
-    height: 100%;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: -40%;
-    animation: loading 2s linear infinite;
-}
-
-@keyframes loading {
-    0% {
-        left: -40%;
-    }
-    100% {
-        left: 100%;
-    }
-}
-    </style>
     <script>
 document.addEventListener('DOMContentLoaded', function() {
     const preloader = document.getElementById('preloader');
@@ -116,6 +49,37 @@ function animatePageElements() {
     document.body.style.opacity = '1';
 }
     </script>
+    <div class="fixed-slider-wrapper">
+        <div class="header-slider">
+            <div class="slider-container">
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                </div>
+                
+                <div class="slider-content">
+                    <button class="slider-arrow prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="slider-track">
+                        <div class="slider-item active">RESERVA AHORA Y SALVA TU BARBA</div>
+                        <div class="slider-item">ENVÍO GRATIS COMPRAS MAYORES A S/ 100 (LIMA METROPOLITANA)</div>
+                        <div class="slider-item">¡OFERTAS ESPECIALES ESTA SEMANA!</div>
+                    </div>
+
+                    <button class="slider-arrow next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--SCRIPT SLIDER-->
+    <script src="js/slider.js"></script>
+
     <header class="header">
         <div class="container">
           <img src="img/logo.png" alt="Logo" class="logo">
@@ -162,7 +126,7 @@ function animatePageElements() {
             
             <div class="sobre-texto" data-aos="fade-left">
                 <div class="sobre-nosotros">
-                <h2>Sobre Nosotros</h2>
+                <h2 class="equipo-titulo">Sobre Nosotros</h2>
             </div>
             <p>En nuestra barbería, no solo nos especializamos en cortes de cabello y afeitados, sino que brindamos una experiencia única a cada cliente que cruza nuestras puertas. Cada visita es más que una simple sesión de belleza: es un momento de relajación y cuidado personalizado.</p>
             <p>Nuestros barberos no solo son expertos en su oficio, sino que también son artistas dedicados a su arte. Desde cortes clásicos hasta estilos modernos y atrevidos, cada servicio se adapta a las preferencias únicas de nuestros clientes. Nos enorgullece no solo seguir las tendencias, sino establecerlas con creatividad y pasión.</p>
@@ -171,85 +135,208 @@ function animatePageElements() {
             
             </div>
         </section>
-
         <section id="servicios" class="servicios">
-            <h2 data-aos="fade-up">Servicios</h2>
-            <center><p data-aos="fade-up" data-aos-delay="200">Nuestra barbería se enorgullece de ofrecer servicios de excelente calidad que van más allá del simple corte de cabello y afeitado.</p>
-            </center>
-            <div class="servicios-grid">
-                <div class="servicio-item" data-aos="fade-up" data-aos-delay="400">
-                    <img src="img/cortes/clasico.jpg" alt="Corte de cabello">
-                    <div class="servicio-info">
-                        <h3>Corte Clasico</h3>
-                        <span class="servicio-precio">Precio por Corte: S/.10</span>
+            <div class="servicios-container">
+                <!-- Columna Cortes -->
+                <div class="servicios-column">
+                    <h2 class="servicios-titulo">CORTES</h2>
+                    <div class="servicio-item">
+                        <div class="servicio-info">
+                            <h3>CLASICO</h3>
+                        </div>
+                        <div class="servicio-precio">S./10</div>
+                    </div>
+                    
+                    <div class="servicio-item">
+                        <div class="servicio-info">
+                            <h3>DEGRADADO</h3>
+                        </div>
+                        <div class="servicio-precio">S./15</div>
+                    </div>
+                    
+                    <div class="servicio-item">
+                        <div class="servicio-info">
+                            <h3>LIMPIEZA FACIAL</h3>
+                            <p class="servicio-descripcion">Tratamiento exfoliante humectante en el rostro</p>
+                        </div>
+                        <div class="servicio-precio">S./30</div>
+                    </div>
+                    
+                    <div class="servicio-item">
+                        <div class="servicio-info">
+                            <h3>DEPILACIÓN</h3>
+                            <p class="servicio-descripcion">Ceja, nariz y oído</p>
+                        </div>
+                        <div class="servicio-precio">S./30</div>
                     </div>
                 </div>
-                <div class="servicio-item" data-aos="fade-up" data-aos-delay="600">
-                    <img src="img/cortes/degradado.jpg" alt="Corte completo">
-                    <div class="servicio-info">
-                        <h3>Corte Degradado</h3>
-                        <span class="servicio-precio">Precio por Corte: S/.30</span>
+        
+                <!-- Columna BARBA -->
+                <div class="servicios-column">
+                    <h2 class="servicios-titulo">BARBA</h2>
+                    <div class="servicio-item">
+                        <div class="servicio-info">
+                            <h3>RECORTE ALINEADO DE BARBA O BIGOTE</h3>
+                            <p class="servicio-descripcion">Preshave, espuma caliente, toalla fría y caliente, aromaterapia, aftershave y masaje dermo calmante</p>
+                        </div>
+                        <div class="servicio-precio">S./20</div>
                     </div>
-                </div>
-                <div class="servicio-item" data-aos="fade-up" data-aos-delay="800">
-                    <img src="img/cortes/barba.jpeg" alt="Corte y Barba">
-                    <div class="servicio-info">
-                        <h3>Corte y Barba</h3>
-                        <span class="servicio-precio">Precio por Corte: S/.35</span>
+                    
+                    <div class="servicio-item">
+                        <div class="servicio-info">
+                            <h3>AFEITADO DE BARBA</h3>
+                            <p class="servicio-descripcion">Preshave, espuma caliente, pasada de navaja, toalla fría y caliente, aromaterapia, aftershave y masaje dermo calmante</p>
+                        </div>
+                        <div class="servicio-precio">S./30</div>
+                    </div>
+                    
+                    <div class="servicio-item">
+                        <div class="servicio-info">
+                            <h3>COLORACIÓN</h3>
+                            <p class="servicio-descripcion">Coloración de barba o bigote</p>
+                        </div>
+                        <div class="servicio-precio">S./35</div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="equipo" class="nuestro-equipo">
-            <h2 data-aos="fade-up">Nuestra Maffia</h2>
-            <br><br>
             <div class="equipo-container">
-                <div class="miembro-equipo" data-aos="fade-up" data-aos-delay="200">
-                    <img src="img/barberos/anze.jpeg" alt="Max Zelaya Ayala">
-                    <h3>Max Zelaya Ayala</h3>
-                    <h4>Redes Sociales</h4>
-                    <div class="redes-sociales">
-                        <a href="#" aria-label="Twitter de Max Zelaya Ayala"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://www.instagram.com/anze_zaru/" aria-label="Instagram de Max Zelaya Ayala"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100011100340190" aria-label="Facebook de Max Zelaya Ayala"><i class="fab fa-facebook-f"></i></a>
+                <h2 class="equipo-titulo">Nuestra Maffia</h2>
+                <p class="equipo-subtitulo">Conoce a nuestros expertos barberos profesionales</p>
+                
+                <div class="equipo-grid">
+                    <!-- Tarjeta de Barbero -->
+                    <div class="barbero-card">
+                        <div class="barbero-imagen-container">
+                            <img src="img/barberos/anze.jpeg" alt="Max Zelaya Ayala" class="barbero-imagen">
+                            <div class="barbero-overlay">
+                                <div class="barbero-especialidades">
+                                    <span>✂️ Cortes Modernos</span>
+                                    <span>🪒 Barbas Estilizadas</span>
+                                    <span>💈 Afeitado Clásico</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="barbero-info">
+                            <h3 class="barbero-nombre">Max Zelaya Ayala</h3>
+                            <p class="barbero-titulo">Master Barber</p>
+                            <div class="barbero-redes">
+                                <a href="#" class="red-social" aria-label="TikTok">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                                <a href="#" class="red-social" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="red-social" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="barbero-card">
+                        <div class="barbero-imagen-container">
+                            <img src="img/barberos/anze.jpeg" alt="Max Zelaya Ayala" class="barbero-imagen">
+                            <div class="barbero-overlay">
+                                <div class="barbero-especialidades">
+                                    <span>✂️ Cortes Modernos</span>
+                                    <span>🪒 Barbas Estilizadas</span>
+                                    <span>💈 Afeitado Clásico</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="barbero-info">
+                            <h3 class="barbero-nombre">Max Zelaya Ayala</h3>
+                            <p class="barbero-titulo">Master Barber</p>
+                            <div class="barbero-redes">
+                                <a href="#" class="red-social" aria-label="TikTok">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                                <a href="#" class="red-social" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="red-social" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>                    <div class="barbero-card">
+                        <div class="barbero-imagen-container">
+                            <img src="img/barberos/anze.jpeg" alt="Max Zelaya Ayala" class="barbero-imagen">
+                            <div class="barbero-overlay">
+                                <div class="barbero-especialidades">
+                                    <span>✂️ Cortes Modernos</span>
+                                    <span>🪒 Barbas Estilizadas</span>
+                                    <span>💈 Afeitado Clásico</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="barbero-info">
+                            <h3 class="barbero-nombre">Max Zelaya Ayala</h3>
+                            <p class="barbero-titulo">Master Barber</p>
+                            <div class="barbero-redes">
+                                <a href="#" class="red-social" aria-label="TikTok">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                                <a href="#" class="red-social" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="red-social" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="miembro-equipo" data-aos="fade-up" data-aos-delay="200">
-                    <img src="img/barberos/anze.jpeg" alt="imagen2">
-                    <h3>Max Zelaya Ayala</h3>
-                    <h4>Redes Sociales</h4>
-                    <div class="redes-sociales">
-                        <a href="#" aria-label="Twitter de"><i class="fab fa-tiktok"></i></a>
-                        <a href="#" aria-label="Instagram de"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Facebook de"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-                <div class="miembro-equipo" data-aos="fade-up" data-aos-delay="200">
-                    <img src="img/barberos/anze.jpeg" alt="imagen3">
-                    <h3>Max Zelaya Ayala</h3>
-                    <h4>Redes Sociales</h4>
-                    <div class="redes-sociales">
-                        <a href="#" aria-label="Twitter de"><i class="fab fa-tiktok"></i></a>
-                        <a href="#" aria-label="Instagram de"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Facebook de"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-                <!-- Repite para otros miembros del equipo -->
             </div>
         </section>
 
-        <section id="local" class="servicios">
-            <h2 data-aos="fade-up">Nuestro Local</h2>
-            <div class="unidades-container">
-                <div class="unidad" data-aos="fade-up" data-aos-delay="200">
-                    <img src="img/local.jpeg" alt="Unidad Calle Aguiar">
-                    <div class="unidad-info">
-                        <p>Ubicacion:</p>
-                        <p>Av 10 de Junio Local Stand D</p>
+        <section id="local" class="local-section">
+            <div class="local-container">
+                <div class="local-info">
+                    <h2 class="local-titulo">Nuestro Local</h2>
+                    <div class="local-detalles">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Dirección</h3>
+                                <p>Av 10 de Junio Local Stand D</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Horario</h3>
+                                <p>Lunes a Sábado: 9:00 AM - 8:00 PM</p>
+                                <p>Domingo: 10:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>Contacto</h3>
+                                <p>Tel: (51) 5234 6234</p>
+                                <p>WhatsApp: (51) 993 677 504</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                    <a href="https://maps.google.com/?q=Av+Miguel+Grau+701,+San+Martín+de+Porres+15102" class="direcciones-btn" target="_blank">
+                        Cómo llegar
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    </div>
+                    <div class="mapa-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.038119825354!2d-77.07296808517993!3d-12.03720799152969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cfadfa5a4cfd%3A0xb085c7a0802724f6!2sAv.%20Miguel%20Grau%20701%2C%20San%20Mart%C3%ADn%20de%20Porres%2015102!5e0!3m2!1ses-419!2spe!4v1700000000000!5m2!1ses-419!2spe"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    
         </section>
     </div>
     
